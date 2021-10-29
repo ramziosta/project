@@ -1,0 +1,113 @@
+/*-------------------*/
+/* Page Master Reset */
+/* https://piccalil.li/blog/a-modern-css-reset/ */
+
+/* Box Sizing Reset */
+/* Box sizing for psudo elements */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Reset margins */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+figure,
+picture {
+    margin: 0; 
+}
+
+/* defaults font weight */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    font-weight: 400;
+}
+
+/* Defualt body */
+body {
+    line-height: 1.5;
+    min-height: 100vh;
+}
+
+
+/* default images  */
+img,
+picutre {
+    max-width: 100%;
+    display: block;
+}
+
+/* form elements  */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* remove animations for accessibility / special case users */
+@media (prefers-reduced-motion: reduce) {  
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+
+/* ------------------- */
+/* Utility classes for layout */
+/* ------------------- */
+
+.flex {
+    display: flex;
+    gap: var(--gap, 1rem);
+}
+
+.grid {
+    display: grid;
+    gap: var(--gap, 1rem);
+}
+
+/* Andy bell design system spacing */
+/* select elements if it has a sibling before it */
+/* same as: flow > * + * */
+.flow > *:where(:not(:first-child)) {
+    margin-top: var(--flow-space, 1rem);
+    outline: 1px solid red;
+}
+
+/* container reset */
+.container {
+    padding-inline: 2em;
+    margin-inline: auto;
+    max-width: 60rem;
+}
+
+/* screen reader */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap; /* added line */
+    border: 0;
+  }
+  
