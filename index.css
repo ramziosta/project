@@ -1,0 +1,108 @@
+/* ----------------- */
+/* Custom Properties */
+:root {
+   /* colors */
+   --clr-dark: 230 35% 7%;
+   --clr-accent: 6, 100%, 30%;
+   --clr-white: 0 0% 100%;
+   --clr-gold: 40, 54%, 49%;
+   --clr-green: 123, 57%, 24%;
+   --clr-lightGreen: ;
+   --clr-lavander: 239, 51%, 67%;
+   --clr-lightLavander: ;
+   --clr-raspberry: 323, 35%, 31%;
+   --clr-lightRaspberry: ;
+   --clr-gery: ;
+
+   
+   /* font-sizes */
+   --fs-900: 9.375rem;
+   --fs-800: 6.25rem;
+   --fs-700: 3.5rem;
+   --fs-600: 2rem;
+   --fs-500: 1.75rem;
+   --fs-400: 1.125rem;
+   --fs-300: 1rem;
+   --fs-200: 0.875rem;
+   
+   /* font-families */
+   --ff-serif: "Bellefair", serif;
+   --ff-sans-cond: "Barlow Condensed", sans-serif;
+   --ff-sans-normal: "Barlow", sans-serif;
+  }
+
+
+/* colors */
+.bg-dark { background-color: hsl( var(--clr-dark));}
+.bg-accent { background-color: hsl( var(--clr-accent) );}
+.bg-white { background-color: hsl( var(--clr-white));}
+.bg-green { background-color: hsl( var(--clr-green));}
+.bg-gold { background-color: hsl( var(--clr-gold));}
+.bg-raspberry { background-color: hsl( var(--clr-raspberry));}
+.bg-lavander { background-color: hsl( var(--clr-lavander));}
+
+.text-dark { color: hsl( var(--clr-dark));}
+.text-accent { color: hsl( var(--clr-accent) );}
+.text-white { color: hsl( var(--clr-white));}
+.text-green { color: hsl( var(--clr-green));}
+.text-gold { color: hsl( var(--clr-gold));}
+.text-raspberry { color: hsl( var(--clr-raspberry));}
+.text-lavander { color: hsl( var(--clr-lavander));}
+
+/* typography */
+
+.ff-serif { font-family: var(--ff-serif); } 
+.ff-sans-cond { font-family: var(--ff-sans-cond); } 
+.ff-sans-normal { font-family: var(--ff-sans-normal); } 
+
+.letter-spacing-1 { letter-spacing: 4.75px; } 
+.letter-spacing-2 { letter-spacing: 2.7px; } 
+.letter-spacing-3 { letter-spacing: 2.35px; } 
+
+.uppercase { text-transform: uppercase; }
+
+.fs-900 { font-size: var(--fs-900); }
+.fs-800 { font-size: var(--fs-800); }
+.fs-700 { font-size: var(--fs-700); }
+.fs-600 { font-size: var(--fs-600); }
+.fs-500 { font-size: var(--fs-500); }
+.fs-400 { font-size: var(--fs-400); }
+.fs-300 { font-size: var(--fs-300); }
+.fs-200 { font-size: var(--fs-200); }
+
+.fs-900,
+.fs-800,
+.fs-700,
+.fs-600 {
+    line-height: 1.1;
+}
+
+.numbered-title {
+    font-family: var(--ff-sans-cond);
+    font-size: var(--fs-500);
+    text-transform: uppercase;
+    letter-spacing: 4.72px; 
+}
+
+.numbered-title span {
+    margin-right: .5em;
+    font-weight: 700;
+    color: hsl( var(--clr-white) / .25);
+}
+/* use this method to edit a specific container dont use inline style
+.fx {
+    --gap: 5rem;
+    background: pink;
+    padding: 2rem;
+    border-radius: 1rem;
+    color: hsl( var(--clr-white) / 1.0  );
+} 
+*/
+
+body{
+    font-family: var(--ff-sans-normal);
+    font-size: var(--fs-400);
+    color: hsl( var(--clr-white) );
+    background-color: hsl( var(--clr-dark) );
+}
+
